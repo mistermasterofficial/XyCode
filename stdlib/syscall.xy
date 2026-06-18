@@ -1,0 +1,279 @@
+tmpl SYSCALL.KEYINFO_KEYCHAR;
+    syscall 0;
+endtmpl;
+
+tmpl SYSCALL.KEYINFO_MODIFIERS;
+    syscall 1;
+endtmpl;
+
+tmpl SYSCALL.IS_CAPSLOCK;
+    syscall 2;
+endtmpl;
+
+tmpl SYSCALL.IS_NUMBERLOCK;
+    syscall 3;
+endtmpl;
+
+tmpl SYSCALL.KEYINFO_KEY;
+    syscall 4;
+endtmpl;
+
+tmpl SYSCALL.IS_KEYAVAILABLE;
+    syscall 5;
+endtmpl;
+
+tmpl SYSCALL.GET_CURSORLEFT;
+    syscall 6;
+endtmpl;
+
+tmpl SYSCALL.GET_CURSORTOP;
+    syscall 7;
+endtmpl;
+
+tmpl SYSCALL.GET_WIDTH;
+    syscall 8;
+endtmpl;
+
+tmpl SYSCALL.GET_HEIGHT;
+    syscall 9;
+endtmpl;
+
+tmpl SYSCALL.GET_FOREGROUNDCOLOR;
+    syscall 10;
+endtmpl;
+
+tmpl SYSCALL.GET_BACKGROUNDCOLOR;
+    syscall 11;
+endtmpl;
+
+tmpl SYSCALL.GET_CURSORSIZE;
+    syscall 12;
+endtmpl;
+
+tmpl SYSCALL.IS_CURSORVISIBLE;
+    syscall 13;
+endtmpl;
+
+tmpl SYSCALL.GET_FONTHEIGHT;
+    syscall 14;
+endtmpl;
+
+tmpl SYSCALL.GET_CURRENT_ENCODING_NUM;
+    syscall 15;
+endtmpl;
+
+tmpl SYSCALL.CLS;
+    syscall 16;
+endtmpl;
+
+tmpl SYSCALL.WRITELINE;
+    syscall 17;
+endtmpl;
+
+tmpl SYSCALL.WRITE;
+    syscall 18;
+endtmpl;
+
+tmpl SYSCALL.RESETCOLOR;
+    syscall 19;
+endtmpl;
+
+tmpl SYSCALL.SET_CURSORLEFT;
+    syscall 20;
+endtmpl;
+
+tmpl SYSCALL.SET_CURSORTOP;
+    syscall 21;
+endtmpl;
+
+tmpl SYSCALL.SET_CURSORVISIBLE;
+    syscall 22;
+endtmpl;
+
+tmpl SYSCALL.SET_FOREGROUNDCOLOR;
+    syscall 23;
+endtmpl;
+
+tmpl SYSCALL.SET_BACKGROUNDCOLOR;
+    syscall 24;
+endtmpl;
+
+tmpl SYSCALL.PCSPEAKER_BEEP;
+    syscall 25;
+endtmpl;
+
+tmpl SYSCALL.PCSPEAKER_FDBEEP;
+    syscall 26;
+endtmpl;
+
+tmpl SYSCALL.PCSPEAKER_NDBEEP;
+    syscall 27;
+endtmpl;
+
+tmpl SYSCALL.UPDATE_KEYINFO;
+    syscall 28;
+endtmpl;
+
+tmpl SYSCALL.POWER_SHUTDOWN;
+    syscall 29;
+endtmpl;
+
+tmpl SYSCALL.POWER_REBOOT;
+    syscall 30;
+endtmpl;
+
+tmpl SYSCALL.SET_ENCODING;
+    syscall 31;
+endtmpl;
+
+tmpl SYSCALL.SET_MODE;
+    syscall 32;
+endtmpl;
+
+tmpl SYSCALL.APPMANAGER_QUIT_APP;
+    syscall 33;
+endtmpl;
+
+tmpl SYSCALL.APPMANAGER_SET_VALUE;
+    syscall 34;
+endtmpl;
+
+tmpl SYSCALL.APPMANAGER_GET_VALUE;
+    syscall 35;
+endtmpl;
+
+tmpl SYSCALL.APPMANAGER_START_APP;
+    syscall 36;
+endtmpl;
+
+tmpl SYSCALL.APPMANAGER_GET_ERRORS;
+    syscall 37;
+endtmpl;
+
+tmpl SYSCALL.GET_MODE;
+    syscall 38;
+endtmpl;
+
+tmpl SYSCALL.READLINE;
+    syscall 39;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_OPEN;
+    syscall 40;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_IS_CAN_READ;
+    syscall 41;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_IS_CAN_WRITE;
+    syscall 42;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_GET_LENGTH;
+    syscall 43;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_SET_LENGTH;
+    syscall 44;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_GET_POSITION;
+    syscall 45;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_SET_POSITION;
+    syscall 46;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_SEEK_POSITION;
+    syscall 47;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_READ_BYTE;
+    syscall 48;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_WRITE_BYTE;
+    syscall 49;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_CLOSE;
+    syscall 50;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_SET_READ_TIMEOUT;
+    syscall 51;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_SET_WRITE_TIMEOUT;
+    syscall 52;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_GET_READ_TIMEOUT;
+    syscall 53;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_GET_WRITE_TIMEOUT;
+    syscall 54;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_FLUSH;
+    syscall 55;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_GET_PATH;
+    syscall 56;
+endtmpl;
+
+tmpl SYSCALL.FILESYSTEM_FORMAT_PATH;
+    syscall 57;
+endtmpl;
+
+tmpl SYSCALL.FILE_CREATE;
+    syscall 58;
+endtmpl;
+
+tmpl SYSCALL.FILE_COPY;
+    syscall 59;
+endtmpl;
+
+tmpl SYSCALL.FILE_DELETE;
+    syscall 60;
+endtmpl;
+
+tmpl SYSCALL.FILESTREAM_IS_EXISTS;
+    syscall 61;
+endtmpl;
+
+tmpl SYSCALL.DIRECTORY_CREATE;
+    syscall 62;
+endtmpl;
+
+tmpl SYSCALL.DIRECTORY_DELETE;
+    syscall 63;
+endtmpl;
+
+tmpl SYSCALL.DIRECTORY_IS_EXISTS;
+		syscall 64;
+endtmpl;
+
+tmpl SYSCALL.DIRECTORY_GET_FILES;
+    syscall 65;
+endtmpl;
+
+tmpl SYSCALL.DIRECTORY_GET_DIRECTORIES;
+    syscall 66;
+endtmpl;
+
+tmpl SYSCALL.GET_CURRENT_DIRECTORY;
+    syscall 67;
+endtmpl;
+
+tmpl SYSCALL.SET_CURRENT_DIRECTORY;
+    syscall 68;
+endtmpl;
+
+tmpl SYSCALL.GET_DIRECTORY_ROOT;
+    syscall 69;
+endtmpl;

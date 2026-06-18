@@ -1,0 +1,169 @@
+tmpl copyto VAR;
+	pop VAR;
+	push VAR;
+endtmpl;
+
+
+
+tmpl add A B;
+    push B;
+    push A;
+    add;
+endtmpl;
+
+tmpl sub A B;
+    push B;
+    push A;
+    sub;
+endtmpl;
+
+tmpl mul A B;
+    push B;
+    push A;
+    mul;
+endtmpl;
+
+tmpl div A B;
+    push B;
+    push A;
+    div;
+endtmpl;
+
+tmpl and A B;
+    push B;
+    push A;
+    and;
+endtmpl;
+
+tmpl or A B;
+    push B;
+    push A;
+    or;
+endtmpl;
+
+tmpl xor A B;
+    push B;
+    push A;
+    xor;
+endtmpl;
+
+tmpl more A B;
+    push B;
+    push A;
+    more;
+endtmpl;
+
+tmpl less A B;
+    push B;
+    push A;
+    less;
+endtmpl;
+
+tmpl equals A B;
+    push B;
+    push A;
+    equals;
+endtmpl;
+
+tmpl malloc VAR;
+    malloc;
+    pop VAR;
+endtmpl;
+
+tmpl free VAR;
+    push VAR;
+    free;
+endtmpl;
+
+tmpl toheap ADDR IND VAL;
+    push VAL;
+    push IND;
+    push ADDR;
+    toheap;
+endtmpl;
+
+tmpl fromheap ADDR IND;
+    push IND;
+    push ADDR;
+    fromheap;
+endtmpl;
+
+tmpl inc VAR;
+    push VAR;
+    inc;
+endtmpl;
+
+tmpl dec VAR;
+    push VAR;
+    dec;
+endtmpl;
+
+tmpl status VAR;
+    push VAR;
+    status;
+endtmpl;
+
+tmpl neg VAR;
+    push VAR;
+    neg;
+endtmpl;
+
+tmpl return VAR;
+    push VAR;
+    return;
+endtmpl;
+
+tmpl bool VAR;
+    push VAR;
+    bool;
+endtmpl;
+
+tmpl lshift A B;
+    push B;
+    push A;
+    lshift;
+endtmpl;
+
+tmpl rshift A B;
+    push B;
+    push A;
+    rshift;
+endtmpl;
+
+tmpl irshift A B;
+    push B;
+    push A;
+    irshift;
+endtmpl;
+
+
+
+tmpl abs VAR;
+    push VAR;
+    push 0;
+    push VAR;
+    less;
+    if;
+        neg;
+    endif;
+endtmpl;
+
+
+
+tmpl rpush;
+    revflag 1;
+endtmpl;
+
+tmpl endrpush;
+    reverse;
+    revflag 0;
+endtmpl;
+
+
+
+tmpl rotate A B;
+    push B;
+    push A;
+    pop B;
+    pop A;
+endtmpl;

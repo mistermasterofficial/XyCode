@@ -1,0 +1,28 @@
+include "STDLIB/syscall";
+include "STDLIB/operations";
+include "STDLIB/loops";
+
+//this is comment;
+
+func HELLO; // this function prints "Hello, World!";
+	. rpush;
+		mnlarr "Hello, World!"; // or mnlarr 13 "H" "e" "l" "l" "o" "," " " "W" "o" "r" "l" "d" "!";
+		mnl 0;
+	. endrpush;
+
+	. SYSCALL.WRITE;
+	. SYSCALL.WRITELINE;
+endfunc;
+
+func repeat;
+	mnl 5;
+	var count;
+	pop count;
+	. for count;
+		call HELLO;
+	. endfor count;
+	. SYSCALL.PCSPEAKER_BEEP;
+endfunc;
+
+call repeat;
+. SYSCALL.APPMANAGER_QUIT_APP;

@@ -1,0 +1,12 @@
+include "operations";
+
+tmpl for i;
+    push i;
+    while;
+endtmpl;
+
+tmpl endfor i;
+    . dec i;
+    . copyto i;
+    endwhile;
+endtmpl;

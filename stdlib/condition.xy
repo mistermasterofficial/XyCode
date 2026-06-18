@@ -1,0 +1,11 @@
+tmpl if CON;
+    push CON;
+    if;
+endtmpl;
+
+tmpl else CON;
+    endif;
+    . bool CON;
+    not;
+    if;
+endtmpl;
