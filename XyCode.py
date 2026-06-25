@@ -115,9 +115,11 @@ class XyCodeParser:
         while count<len(instr):
             if instr[count].name == "include":
                 _path = instr[count].args[0].content.replace("/","\\")+".xy"
-                _path = _path.replace("STDLIB",cls.stdlib_path)
-                if dirpath!="":
+                if dirpath!="" and not "STDLIB" in _path:
                     _path = dirpath+"\\"+_path
+                else:
+                    _path = _path.replace("STDLIB",cls.stdlib_path)
+                
                 if not _path in cls.used_paths:
                     cls.used_paths.append(_path)
                     _dirpath = "\\".join(_path.split("\\")[:-1])
